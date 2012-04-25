@@ -241,7 +241,7 @@ $ ->
     days.push 0
     for day in days
       th = $(document.createElement 'th')
-      th.text day_names[day]
+      th.text day_names[day][0...3]
       th.appendTo tr
     thead.appendTo table
     $(document.createElement 'tbody').appendTo table
