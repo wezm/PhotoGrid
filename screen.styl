@@ -1,28 +1,92 @@
 body
-  font: 12px Helvetica, Arial, sans-serif
+  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif
   // color: white
   // background-color: #333
+  width: 1080px
+  margin: 0 auto
 
-ul.grid
-  margin: 0
-  padding: 0
+h1
+  font-size: 8em
+  text-align: center
 
-  li
-    display: inline-block
-    list-style: none
-    margin: 2px
-    padding: 0
+h2
+  font-size: 6em
+
+  // a img:hover
+  //   outline: #3b74c7 solid 2px
+
+.calendar
+  th
+    font-size: 1.5em
+
+  td
     position: relative
 
-    span.day
+    .day
       position: absolute
-      top: 2
-      left: 2
+      top: 2px
+      left: 6px
       color: white
-      color: rgba(255,255,255,0.7)
-      font-weight: bold
+      font: 2em "HelveticaNeue-CondensedBold", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif
+      // font-size: 2em
+      // font-weight: bold
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
 
-    a img:hover
-      outline: #3b74c7 solid 2px
+    &.pad
+      opacity: 0.7
+
+// @media only screen and (min-width: 1024px) and (max-width: 1024px)
+@media only screen and (min-width: 1024px) and (max-width: 1080px)
+  body
+    width: 1024px
+
+  .calendar td img
+    width: 140px
+    height: 140px
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+  body
+    width: 768px
 
 
+  .calendar td img
+    width: 100px
+    height: 100px
+
+@media only screen and (min-width: 480px) and (max-width: 768px)
+  body
+    width: 480px
+
+  .calendar td img
+    width: 60px
+    height: 60px
+
+@media only screen and (max-width: 768px)
+  h1
+    font-size: 4em
+  h2
+    font-size: 3em
+
+  .calendar
+    td .day
+      font-size: 1em
+
+    th
+      font-size: 0.75em
+      
+
+@media only screen and (min-width: 320px) and (max-width: 480px)
+  body
+    width: 320px
+
+  .calendar td img
+    width: 40px
+    height: 40px
+
+@media only screen and (max-width: 320px)
+  body
+    width: 240px
+
+  .calendar td img
+    width: 30px
+    height: 30px

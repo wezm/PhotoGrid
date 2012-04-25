@@ -8,7 +8,7 @@ class Flickr
         api_key: @api_key
         method: 'flickr.photosets.getPhotos'
         photoset_id: photoset_id
-        extras: 'url_sq,url_z,date_taken'
+        extras: 'url_q,url_l,date_taken'
         format: 'json'
       dataType: 'jsonp'
       jsonp: 'jsoncallback'
